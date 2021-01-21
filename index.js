@@ -5,26 +5,26 @@ var start = document.getElementById('start'),
     playAgain = document.getElementById('playAgain');
 
 
-pointer.style.display = 'none';
-win.style.display = 'none';
-playAgain.style.display = 'none';
+pointer.style.visibility = 'hidden';
+win.style.visibility = 'hidden';
+playAgain.style.visibility = 'hidden';
 
 
 start.addEventListener('click', function(event) {
     start.style.display = 'none';
-    pointer.style.display = 'flex';
+    pointer.style.visibility = 'visible';
     
 })
 
 pointer.addEventListener('click', function(event2) {
-    win.style.display = 'flex';
-    pointer.style.display = 'none';
-    playAgain.style.display = 'flex';
+    win.style.visibility = 'visible';
+    pointer.style.visibility = 'hidden';
+    playAgain.style.visibility = 'visible';
 })
 
 playAgain.addEventListener('click', function(event3) {
-    playAgain.style.display = 'none';
-    win.style.display = 'none';
-    pointer.style.display = 'flex';
+    playAgain.style.visibility = 'hidden';
+    win.style.visibility = 'hidden';
+    pointer.style.visibility = 'visible';
     
 })
